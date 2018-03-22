@@ -1,0 +1,15 @@
+.home-container {
+    padding-top: 50px;
+}
+
+p-orderList >>> .ui-orderlist-list-container {
+    width: 100% !important;
+}
+
+p-orderList >>> .ui-orderlist-controls {
+    display: none !important;
+}
+
+p-orderList >>> .ui-orderlist, p-orderList >>> .ui-orderlist-list {
+    height: 400px;
+}

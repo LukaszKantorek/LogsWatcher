@@ -1,0 +1,17 @@
+c:\LogsReader\LogsReader.Model\bin\Debug\netcoreapp2.0\LogsReader.Model.deps.json
+c:\LogsReader\LogsReader.Model\bin\Debug\netcoreapp2.0\LogsReader.Model.dll
+c:\LogsReader\LogsReader.Model\bin\Debug\netcoreapp2.0\LogsReader.Model.pdb
+c:\LogsReader\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.csproj.CoreCompileInputs.cache
+c:\LogsReader\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.AssemblyInfoInputs.cache
+c:\LogsReader\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.AssemblyInfo.cs
+c:\LogsReader\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.dll
+c:\LogsReader\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.pdb
+C:\LogsWatcher\LogsReader.Model\bin\Debug\netcoreapp2.0\LogsReader.Model.deps.json
+C:\LogsWatcher\LogsReader.Model\bin\Debug\netcoreapp2.0\LogsReader.Model.dll
+C:\LogsWatcher\LogsReader.Model\bin\Debug\netcoreapp2.0\LogsReader.Model.pdb
+C:\LogsWatcher\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.csprojResolveAssemblyReference.cache
+C:\LogsWatcher\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.csproj.CoreCompileInputs.cache
+C:\LogsWatcher\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.AssemblyInfoInputs.cache
+C:\LogsWatcher\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.AssemblyInfo.cs
+C:\LogsWatcher\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.dll
+C:\LogsWatcher\LogsReader.Model\obj\Debug\netcoreapp2.0\LogsReader.Model.pdb

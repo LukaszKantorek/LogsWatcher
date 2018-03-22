@@ -1,0 +1,42 @@
+.home-container {
+    padding-top: 50px;
+}
+
+p-orderList >>> .ui-orderlist-list-container {
+    width: 100% !important;
+}
+
+p-orderList >>> .ui-orderlist-controls {
+    display: none !important;
+}
+
+p-orderList >>> .ui-orderlist, p-orderList >>> .ui-orderlist-list {
+    height: 400px;
+}
+
+p-orderList >>> .ui-orderlist .color-green {
+    color: #5cb85c;
+}
+
+p-orderList >>> .ui-orderlist .color-orange {
+    color: #f0ad4e;
+}
+
+p-orderList >>> .ui-orderlist .color-red {
+    color: #d9534f;
+}
+
+p-orderList >>> .ui-orderlist .log-wrapper {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 0;
+}
+
+p-orderList >>> .ui-orderlist .log-wrapper div {
+    float: left;
+    margin-left: 5px;
+}
+
+p-orderList >>> .ui-helper-clearfix {
+    line-height: 5px;
+}
