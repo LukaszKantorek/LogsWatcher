@@ -34,9 +34,15 @@ p-orderList >>> .ui-orderlist .log-wrapper {
 
 p-orderList >>> .ui-orderlist .log-wrapper div {
     float: left;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
-p-orderList >>> .ui-helper-clearfix {
-    line-height: 5px;
+p-orderList >>> .ui-orderlist .insert-date-column {
+    max-width: 208px;
+}
+
+p-orderList >>> .ui-orderlist .stack-trace {
+    min-width: 130px;
+    max-width: 230px;
+    word-wrap: break-word;
 }

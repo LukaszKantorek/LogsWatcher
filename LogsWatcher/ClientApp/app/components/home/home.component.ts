@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LogsUpdater } from "../../logs.updater";
+import { LogsRepository } from "../../repositories/logs.repository";
 
 import { StateMediator } from "../../statemanager/state.mediator";
 import { Http } from '@angular/http';
@@ -10,10 +10,10 @@ import { Http } from '@angular/http';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit{
-  logsUpdater: LogsUpdater;
+  logsUpdater: LogsRepository;
 
   constructor(mediator: StateMediator, server: Http) {
-    this.logsUpdater = new LogsUpdater(mediator, server);
+    this.logsUpdater = new LogsRepository(mediator, server);
   }
 
   ngOnInit(): void {

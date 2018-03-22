@@ -1,14 +1,15 @@
-﻿import { StateMediator, INotifier } from "./statemanager/state.mediator";
-import { ChangeType } from "./statemanager/changetype";
+﻿import { StateMediator, INotifier } from "../statemanager/state.mediator";
+import { ChangeType } from "../statemanager/changetype";
 import { Http } from '@angular/http';
-import { Log } from './models/log';
 
-export class LogsUpdater {
+export class LogsRepository {
 
   server: Http;
   mediator: INotifier;
+  urlprefix: string;
 
   constructor(mediator: StateMediator, server: Http) {
+    this.urlprefix = 'http://localhost:61148';
     this.mediator = mediator;
     this.server = server;
   }
@@ -18,7 +19,7 @@ export class LogsUpdater {
   }
 
   getLogsFromServer() {
-    this.server.get('http://localhost:61148/Domain/GetLogs').subscribe(result=> {
+    this.server.get(this.urlprefix + '/Logger/GetLogs').subscribe(result=> {
       if (result) {
         let logs = result.json();
         if (logs) {
@@ -41,7 +42,7 @@ export class LogsUpdater {
   }
 
   private appendLog(uriPostFix: string) {
-    this.server.get('http://localhost:61148/Domain/' + uriPostFix).subscribe(() => {
+    this.server.get(this.urlprefix + '/Logger/' + uriPostFix).subscribe(() => {
       this.getLogsFromServer();
     }, error => console.error(error));
   }

@@ -1,18 +1,16 @@
 using System;
 using System.Linq;
-using LogsReader.Database;
 using LogsReader.Model;
+using LogsWatcher.Database;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LogsReader.Controllers
+namespace LogsWatcher.Controllers
 {
-    //[Route("api/[controller]")]
-    //[Authorize]
-    public class DomainController : Controller
+    public class LoggerController : Controller
     {
         private readonly ILogsRepository _logsRepository;
 
-        public DomainController(ILogsRepository logsRepository)
+        public LoggerController(ILogsRepository logsRepository)
         {
             _logsRepository = logsRepository;
         }
@@ -30,31 +28,48 @@ namespace LogsReader.Controllers
         [HttpGet]
         public void AddTrace()
         {
+            var assemblyPath = GetCurrentAssemblyPath();
+
             _logsRepository.InsertTrace(new Log()
             {
                 InsertDate = DateTime.Now,
                 Value = "This is warning",
+                StackTrace = assemblyPath
             });
         }
 
         [HttpGet]
         public void AddWarning()
         {
+            var assemblyPath = GetCurrentAssemblyPath();
+
             _logsRepository.InsertWarning(new Log()
             {
                 InsertDate = DateTime.Now,
                 Value = "This is warning",
+                StackTrace = assemblyPath
             });
         }
 
         [HttpGet]
         public void AddError()
         {
+            var assemblyPath = GetCurrentAssemblyPath();
+
             _logsRepository.InsertError(new Log()
             {
                 InsertDate = DateTime.Now,
                 Value = "This is error",
+                StackTrace = assemblyPath
             });
+        }
+
+        private string  GetCurrentAssemblyPath()
+        {
+            return System.Reflection
+                .Assembly
+                .GetAssembly(typeof(LoggerController))
+                .Location;
         }
     }
 }

@@ -20,6 +20,7 @@ C:\LogsReader\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsReader
 C:\LogsReader\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsReader.AuthenticationServer.AssemblyInfo.cs
 C:\LogsReader\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsReader.AuthenticationServer.dll
 C:\LogsReader\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsReader.AuthenticationServer.pdb
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\logsreader.pfx
 C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsReader.AuthenticationServer.deps.json
 C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsReader.AuthenticationServer.runtimeconfig.json
 C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsReader.AuthenticationServer.runtimeconfig.dev.json

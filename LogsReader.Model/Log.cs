@@ -15,5 +15,6 @@ namespace LogsReader.Model
         public DateTime InsertDate { get; set; }
         [Required]
         public LogType Type { get; set; }
+        public string StackTrace { get; set; }
     }
 }

@@ -1,11 +1,12 @@
-<p-orderList [value]="logs" filterBy="value" responsive="true" dragdrop="false" >
+<p-orderList [value]="logs" filterBy="value" responsive="true" dragdrop="false">
   <ng-template let-log pTemplate="item">
     <div class="ui-helper-clearfix">
       <div style="font-size: 14px; float: right; margin: 15px 5px 0 0" class="log-wrapper"
            [ngClass]="{'color-red': log.type.typeNumber ===2, 'color-orange': log.type.typeNumber === 1, 'color-green': log.type.typeNumber === 0}">
-        <div>[{{log.insertDate}}]</div>
-        <div>[{{log.type.displayName}}]</div>
-        <div>{{log.value}}</div>
+        <div class="insert-date-column">[{{log.insertDate}}]</div>
+        <div class="display-name">[{{log.type.displayName}}]</div>
+        <div class="log-value">{{log.value}}</div>
+        <div class="stack-trace">({{log.stackTrace}})</div>
       </div>
     </div>
   </ng-template>

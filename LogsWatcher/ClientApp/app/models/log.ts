@@ -4,6 +4,7 @@ export interface Log {
   value: string;
   insertDate: Date;
   type: LogType;
+  stackTrace: string;
 }
 
 export class LogExtensions {

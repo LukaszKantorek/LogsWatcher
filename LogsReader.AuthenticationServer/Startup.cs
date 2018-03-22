@@ -18,7 +18,7 @@ namespace LogsReader.AuthenticationServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddIdentityServer()
-                .AddSigningCredential(new X509Certificate2(@"C:\LogsWatcher\LogsReader.AuthenticationServer\logsreader.pfx", "password1"))
+                .AddSigningCredential(new X509Certificate2("logsreader.pfx", "password1"))
                 .AddTestUsers(InMemoryConfigurations.GetUsers().ToList())
                 .AddInMemoryClients(InMemoryConfigurations.GetClients())
                 .AddInMemoryApiResources(InMemoryConfigurations.GetApiRecources())

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
-using LogsReader.Database;
+using LogsWatcher.Database;
+using LogsWatcher.Tokens;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +36,7 @@ namespace LogsWatcher
             string connectionString = Configuration.GetConnectionString("LogsDatabaaseConnectionString");
             services.AddDbContext<LogsDatabaseContext>(x => x.UseSqlServer(connectionString));
             services.AddTransient<ILogsRepository, LogsRepository>();
+            services.AddTransient<ITokenRefresher, TokenRefresher>();
 
             services.AddMvc();
 
@@ -51,7 +53,10 @@ namespace LogsWatcher
                     options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                     options.SignOutScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                     options.RequireHttpsMetadata = false;
-                    options.Authority = "http://localhost:59418";
+                    options.Authority = Configuration
+                        .GetSection("Services")
+                        .GetSection("AuthorityService")
+                        .Value;
                     options.ClientId = "logsreader_code";
                     options.ClientSecret = "secret";
                     options.SaveTokens = true;

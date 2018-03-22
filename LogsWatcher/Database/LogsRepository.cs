@@ -4,7 +4,7 @@ using System.Linq;
 using LogsReader.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace LogsReader.Database
+namespace LogsWatcher.Database
 {
     public interface ILogsRepository
     {
@@ -42,6 +42,8 @@ namespace LogsReader.Database
         public IEnumerable<Log> SelectAllLogs()
         {
             return GetLogsWithTypes()
+                .Where(x=>x.Type != null)
+                .OrderBy(x=>x.Type.TypeNumber)
                 .ToList();
         }
 

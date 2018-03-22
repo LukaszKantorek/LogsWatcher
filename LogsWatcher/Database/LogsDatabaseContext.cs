@@ -1,7 +1,7 @@
 ﻿using LogsReader.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace LogsReader.Database
+namespace LogsWatcher.Database
 {
     public class LogsDatabaseContext : DbContext
     {

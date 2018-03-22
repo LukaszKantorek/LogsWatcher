@@ -13,3 +13,7 @@ p-orderList >>> .ui-orderlist-controls {
 p-orderList >>> .ui-orderlist, p-orderList >>> .ui-orderlist-list {
     height: 400px;
 }
+
+.buttons-wrapper {
+    padding-bottom: 20px;
+}

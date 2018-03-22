@@ -11,7 +11,9 @@ export class NavMenuComponent {
     constructor(http: Http) {
         var that = this;
         http.get('http://localhost:61148/Home/GetUserName').subscribe(result => {
+          if (result) {
             that.username = (<any>result)._body;
+          }
         }, error => console.error(error));
     }
 }
