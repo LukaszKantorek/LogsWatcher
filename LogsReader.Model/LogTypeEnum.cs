@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LogsReader.Model
+namespace LogsWatcher.Model
 {
     [Flags]
     public enum LogTypeEnum

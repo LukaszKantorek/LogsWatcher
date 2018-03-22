@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LogsReader.Model\LogsReader.Model.csproj" />
+    <ProjectReference Include="..\LogsReader.Model\LogsWatcher.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>

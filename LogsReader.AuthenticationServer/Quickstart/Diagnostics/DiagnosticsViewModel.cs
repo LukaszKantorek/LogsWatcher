@@ -8,7 +8,7 @@ using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Newtonsoft.Json;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Diagnostics
+namespace LogsWatcher.AuthenticationServer.Quickstart.Diagnostics
 {
     public class DiagnosticsViewModel
     {

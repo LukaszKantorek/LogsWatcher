@@ -4,7 +4,7 @@
 
 using System;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Account
+namespace LogsWatcher.AuthenticationServer.Quickstart.Account
 {
     public class AccountOptions
     {

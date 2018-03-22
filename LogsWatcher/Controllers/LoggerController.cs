@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
-using LogsReader.Model;
 using LogsWatcher.Database;
+using LogsWatcher.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LogsWatcher.Controllers

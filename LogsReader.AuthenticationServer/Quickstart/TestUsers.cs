@@ -7,7 +7,7 @@ using System.Security.Claims;
 using IdentityModel;
 using IdentityServer4.Test;
 
-namespace LogsReader.AuthenticationServer.Quickstart
+namespace LogsWatcher.AuthenticationServer.Quickstart
 {
     public class TestUsers
     {

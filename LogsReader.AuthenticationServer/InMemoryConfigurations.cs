@@ -1,10 +1,10 @@
-﻿using IdentityServer4;
+﻿using System.Collections.Generic;
+using System.Security.Claims;
+using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
-using System.Collections.Generic;
-using System.Security.Claims;
 
-namespace LogsReader.AuthenticationServer
+namespace LogsWatcher.AuthenticationServer
 {
     public class InMemoryConfigurations
     {

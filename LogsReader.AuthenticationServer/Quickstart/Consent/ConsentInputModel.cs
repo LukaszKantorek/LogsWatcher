@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Consent
+namespace LogsWatcher.AuthenticationServer.Quickstart.Consent
 {
     public class ConsentInputModel
     {

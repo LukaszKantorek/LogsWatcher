@@ -19,7 +19,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Account
+namespace LogsWatcher.AuthenticationServer.Quickstart.Account
 {
     /// <summary>
     /// This sample controller implements a typical login/logout/provision workflow for local and external accounts.

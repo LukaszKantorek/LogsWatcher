@@ -1,4 +1,4 @@
-﻿namespace LogsReader.Model
+﻿namespace LogsWatcher.Model
 {
     public static class AllowedLogTypes
     {

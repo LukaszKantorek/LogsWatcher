@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Consent
+namespace LogsWatcher.AuthenticationServer.Quickstart.Consent
 {
     /// <summary>
     /// This controller processes the consent UI

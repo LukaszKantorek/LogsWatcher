@@ -12597,9 +12597,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\LogsWatcher\\LogsReader.AuthenticationServer\\LogsReader.AuthenticationServer.csproj",
-      "projectName": "LogsReader.AuthenticationServer",
-      "projectPath": "C:\\LogsWatcher\\LogsReader.AuthenticationServer\\LogsReader.AuthenticationServer.csproj",
+      "projectUniqueName": "C:\\LogsWatcher\\LogsReader.AuthenticationServer\\LogsWatcher.AuthenticationServer.csproj",
+      "projectName": "LogsWatcher.AuthenticationServer",
+      "projectPath": "C:\\LogsWatcher\\LogsReader.AuthenticationServer\\LogsWatcher.AuthenticationServer.csproj",
       "packagesPath": "C:\\Users\\lkantorek\\.nuget\\packages\\",
       "outputPath": "C:\\LogsWatcher\\LogsReader.AuthenticationServer\\obj\\",
       "projectStyle": "PackageReference",

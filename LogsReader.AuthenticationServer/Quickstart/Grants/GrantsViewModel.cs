@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Grants
+namespace LogsWatcher.AuthenticationServer.Quickstart.Grants
 {
     public class GrantsViewModel
     {

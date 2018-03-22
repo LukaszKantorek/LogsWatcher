@@ -1,0 +1,12 @@
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\logsreader.pfx
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.deps.json
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.runtimeconfig.json
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.runtimeconfig.dev.json
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.dll
+C:\LogsWatcher\LogsReader.AuthenticationServer\bin\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.pdb
+C:\LogsWatcher\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.csprojResolveAssemblyReference.cache
+C:\LogsWatcher\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.csproj.CoreCompileInputs.cache
+C:\LogsWatcher\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.AssemblyInfoInputs.cache
+C:\LogsWatcher\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.AssemblyInfo.cs
+C:\LogsWatcher\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.dll
+C:\LogsWatcher\LogsReader.AuthenticationServer\obj\Debug\netcoreapp2.0\LogsWatcher.AuthenticationServer.pdb

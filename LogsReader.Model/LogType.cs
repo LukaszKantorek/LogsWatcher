@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LogsReader.Model
+namespace LogsWatcher.Model
 {
     public class LogType
     {

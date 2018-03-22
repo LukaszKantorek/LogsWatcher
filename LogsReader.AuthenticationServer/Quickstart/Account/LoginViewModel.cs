@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Account
+namespace LogsWatcher.AuthenticationServer.Quickstart.Account
 {
     public class LoginViewModel : LoginInputModel
     {

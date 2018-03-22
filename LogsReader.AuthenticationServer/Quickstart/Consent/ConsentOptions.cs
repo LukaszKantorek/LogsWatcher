@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-namespace LogsReader.AuthenticationServer.Quickstart.Consent
+namespace LogsWatcher.AuthenticationServer.Quickstart.Consent
 {
     public class ConsentOptions
     {

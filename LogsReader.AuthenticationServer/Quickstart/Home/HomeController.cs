@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Home
+namespace LogsWatcher.AuthenticationServer.Quickstart.Home
 {
     [SecurityHeaders]
     public class HomeController : Controller

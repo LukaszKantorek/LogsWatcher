@@ -674,9 +674,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\LogsWatcher\\LogsReader.Model\\LogsReader.Model.csproj",
-      "projectName": "LogsReader.Model",
-      "projectPath": "C:\\LogsWatcher\\LogsReader.Model\\LogsReader.Model.csproj",
+      "projectUniqueName": "C:\\LogsWatcher\\LogsReader.Model\\LogsWatcher.Model.csproj",
+      "projectName": "LogsWatcher.Model",
+      "projectPath": "C:\\LogsWatcher\\LogsReader.Model\\LogsWatcher.Model.csproj",
       "packagesPath": "C:\\Users\\lkantorek\\.nuget\\packages\\",
       "outputPath": "C:\\LogsWatcher\\LogsReader.Model\\obj\\",
       "projectStyle": "PackageReference",

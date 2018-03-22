@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Diagnostics
+namespace LogsWatcher.AuthenticationServer.Quickstart.Diagnostics
 {
     [SecurityHeaders]
     [Authorize]

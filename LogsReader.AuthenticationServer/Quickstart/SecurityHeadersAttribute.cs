@@ -5,7 +5,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace LogsReader.AuthenticationServer.Quickstart
+namespace LogsWatcher.AuthenticationServer.Quickstart
 {
     public class SecurityHeadersAttribute : ActionFilterAttribute
     {

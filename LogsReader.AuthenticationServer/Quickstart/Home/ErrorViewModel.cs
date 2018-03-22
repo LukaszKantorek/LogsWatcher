@@ -4,7 +4,7 @@
 
 using IdentityServer4.Models;
 
-namespace LogsReader.AuthenticationServer.Quickstart.Home
+namespace LogsWatcher.AuthenticationServer.Quickstart.Home
 {
     public class ErrorViewModel
     {
