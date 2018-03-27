@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using LogsWatcher.Database;
+using LogsWatcher.Extensions;
 using LogsWatcher.Model;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,58 +10,43 @@ namespace LogsWatcher.Controllers
     public class LoggerController : Controller
     {
         private readonly ILogsRepository _logsRepository;
+        private readonly ILogsInsertingMethodsFactory _methodsFactory;
 
-        public LoggerController(ILogsRepository logsRepository)
+        public LoggerController(ILogsRepository logsRepository, ILogsInsertingMethodsFactory methodsFactory)
         {
             _logsRepository = logsRepository;
+            _methodsFactory = methodsFactory;
         }
 
         [HttpGet]
         public ActionResult GetLogs()
         {
-            var logs = _logsRepository
-                .SelectAllLogs()
-                .ToList();
+            var logs = ExceptionsExtensions.InvokeWithinTryCatch(() => 
+                _logsRepository
+                    .SelectAllLogs()
+                    .ToList());
 
             return Json(logs);
         }
 
         [HttpGet]
-        public void AddTrace()
+        public void AddLog(LogTypeEnum logType)
         {
-            var assemblyPath = GetCurrentAssemblyPath();
-
-            _logsRepository.InsertTrace(new Log()
+            ExceptionsExtensions.InvokeWithinTryCatch<object>(() =>
             {
-                InsertDate = DateTime.Now,
-                Value = "This is warning",
-                StackTrace = assemblyPath
-            });
-        }
+                var assemblyPath = GetCurrentAssemblyPath();
 
-        [HttpGet]
-        public void AddWarning()
-        {
-            var assemblyPath = GetCurrentAssemblyPath();
+                _methodsFactory
+                    .ForLogsType(logType)
+                    .GetInsertingMethod()(
+                        new Log
+                        {
+                            InsertDate = DateTime.Now,
+                            Value = string.Format("This is {0}", Enum.GetName(typeof(LogTypeEnum), logType)),
+                            StackTrace = assemblyPath
+                        });
 
-            _logsRepository.InsertWarning(new Log()
-            {
-                InsertDate = DateTime.Now,
-                Value = "This is warning",
-                StackTrace = assemblyPath
-            });
-        }
-
-        [HttpGet]
-        public void AddError()
-        {
-            var assemblyPath = GetCurrentAssemblyPath();
-
-            _logsRepository.InsertError(new Log()
-            {
-                InsertDate = DateTime.Now,
-                Value = "This is error",
-                StackTrace = assemblyPath
+                return null;
             });
         }
 

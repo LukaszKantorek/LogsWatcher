@@ -37,6 +37,7 @@ namespace LogsWatcher
             services.AddDbContext<LogsDatabaseContext>(x => x.UseSqlServer(connectionString));
             services.AddTransient<ILogsRepository, LogsRepository>();
             services.AddTransient<ITokenRefresher, TokenRefresher>();
+            services.AddTransient<ILogsInsertingMethodsFactory, LogsInsertingMethodsFactory>();
 
             services.AddMvc();
 

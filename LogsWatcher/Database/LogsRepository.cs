@@ -43,7 +43,7 @@ namespace LogsWatcher.Database
         {
             return GetLogsWithTypes()
                 .Where(x=>x.Type != null)
-                .OrderBy(x=>x.Type.TypeNumber)
+                .OrderBy(x=>x.InsertDate)
                 .ToList();
         }
 

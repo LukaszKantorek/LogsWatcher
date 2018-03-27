@@ -1,6 +1,7 @@
 ﻿import { StateMediator, INotifier } from "../statemanager/state.mediator";
 import { ChangeType } from "../statemanager/changetype";
 import { Http } from '@angular/http';
+import { LogTypeEnum } from '../models/logtypeenum';
 
 export class LogsRepository {
 
@@ -30,15 +31,15 @@ export class LogsRepository {
   }
 
   appendTrace() {
-    this.appendLog('AddTrace');
+    this.appendLog('AddLog?logType=' + LogTypeEnum.Trace);
   }
 
   appendWarning() {
-    this.appendLog('AddWarning');
+    this.appendLog('AddLog?logType=' + LogTypeEnum.Warning);
   }
 
   appendError() {
-    this.appendLog('AddError');
+    this.appendLog('AddLog?logType=' + LogTypeEnum.Error);
   }
 
   private appendLog(uriPostFix: string) {
